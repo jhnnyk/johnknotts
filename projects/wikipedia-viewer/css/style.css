@@ -1,0 +1,15 @@
+body {
+  padding: 20px 0;
+}
+
+ul#results {
+  padding: 0;
+}
+
+#results li {
+  border: 1px solid #337ab7;
+  border-radius: 10px;
+  margin: 10px 0;
+  list-style-type: none;
+  padding: 15px;
+}
