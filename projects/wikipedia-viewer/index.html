@@ -4,52 +4,47 @@
     <meta charset="UTF-8">
     <title>Wikipedia Viewer</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    
-    
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
 
-        <link rel="stylesheet" href="css/style.css">
-
-    
-    
-    
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
 
     <div class="container-fluid">
-  <div class="row text-center">
-    <div class="col-md-4 col-md-offset-4">
-      <h1>Search Wikipedia</h1>
+
+      <div class="row text-center">
+        <div class="col-md-4 col-md-offset-4">
+          <h1>Search Wikipedia</h1>
+        </div>
+        <div class="col-md-3">
+          <p class="text-right">Or read a <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Random Article</a></p>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <form class="form-inline" action="#">
+          <input id="query" class="form-control" type="text" placeholder="Search wikipedia" required>
+          <button id="search" class="btn btn-primary" type="submit">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            Search
+          </button>
+        </form>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <hr>
+          <h2 id="searchResultsTitle" class="hidden">Search results for <span id="searchTerms"></span>:</h2>
+          <ul id="results"></ul>
+          <hr>
+        </div>
+      </div>
+      
     </div>
-    <div class="col-md-3">
-      <p class="text-right">Or read a <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Random Article</a></p>
-    </div>
-  </div>
-  <div class="row text-center">
-    <form class="form-inline" action="#">
-      <input id="query" class="form-control" type="text" placeholder="Search wikipedia" required>
-      <button id="search" class="btn btn-primary" type="submit">
-        <i class="fa fa-search" aria-hidden="true"></i>
-        Search
-      </button>
-    </form>
-  </div>
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <hr>
-      <h2 id="searchResultsTitle" class="hidden">Search results for <span id="searchTerms"></span>:</h2>
-      <ul id="results"></ul>
-      <hr>
-    </div>
-  </div>
-</div>
+
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src="js/index.js"></script>
 
-        <script src="js/index.js"></script>
-
-    
-    
-    
   </body>
 </html>
