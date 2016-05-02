@@ -1,6 +1,7 @@
 $(document).ready(function() {
-  
-  $("#search").on("click", function() {
+
+  $("#search").on("click", function(e) {
+    e.preventDefault();
     var query = $("#query").val();
     $("#searchTerms").html(" " + query);
 
